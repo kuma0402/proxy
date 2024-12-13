@@ -1,0 +1,6 @@
+function FindProxyForURL(url, host) {
+  if (/^w20h\.kancolle-server\.com/.test(host)) {
+     return "PROXY 127.0.0.1:8888; DIRECT";
+  }
+  return "DIRECT";
+}
